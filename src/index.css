@@ -1,13 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Nunito', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Nunito', sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top:0; left: 0; right:0;
+  background: #fff;
+  padding:1rem 7%;
+  text-align: center;
+  justify-content: space-between;
+  z-index: 1000;
+  font-size:30px;
+}
+
+a{
+  text-decoration:none;
+  color:#007FFF;
+}
+a:hover{
+  color:#00308F;
+}
+
+.App{
+  background-image: url("home.jpg");
+  padding-top: 10rem;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.one{
+  text-align: center;
+}
+h1{
+  text-align:center;
+  font-size:40px;
+  font-family: 'Nunito', sans-serif;
+  color:white;
+  text-decoration: underline;
+}
+h2:hover{
+  color: red;
+  cursor: pointer;
+}
+
+h3:hover{
+  color: red;
+  cursor: pointer;
+}
+
+.btn{
+  margin-top: 0rem;
+  display: inline-block;
+  color:#fff;
+  background: #007FFF;
+  border-radius: .5rem;
+  cursor: pointer;
+  padding:.8rem 3rem;
+}
+.btn:hover {
+  background: #FFB830;
+  color: black;
+}
+
+.image{
+  border-radius: 50%;
+  border: 2px solid black;
+  transition-timing-function: ease-out;
+}
+.image:hover{
+  transform: scale(1.15);
+  transition:1s;
+  cursor: pointer;
+}
+
+.three{
+  width: 250px;
+  box-Sizing: "border-box";
+  padding: 40px;
+  margin-left: 10px;
+  margin-right:10px;
+  align-items: center;
+  text-align:center;    
+  background-color: #FFE5B4;
+  border-radius: 10px;
+  border: 2px solid transparent black;
+  box-shadow: 5px 5px beige;
+
+}
+.two{
+  margin-left:500px;
+  margin-top:60px;
+  margin-bottom: 0px;
+}
+
+.row {
+  margin: 20px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  margin-left: 1000px;
+  float: left;
+  width: 25%;
+  padding: 10 10px;
+  margin: 40px;
 }
